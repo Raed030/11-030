@@ -1,0 +1,137 @@
+:root{
+   --color-text: white ;
+}
+
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+}
+
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0px auto;
+}
+
+a{
+   color: #000;
+   text-decoration: none;
+}
+
+
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #f44236;
+   padding-inline: 15px;
+   height: 45px;
+}
+
+.header h1{
+   color: var(--color-text);
+   font-size: 20px;
+}
+
+.header a{
+   font-size: 18px;
+   color: var(--color-text);
+}
+
+.content{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 18px;
+   margin: 35px;
+
+   /* display: grid;
+   grid-template-columns: repeat(auto-fill , 25%);
+   align-items: center; */
+}
+
+.content > div{
+   background-color: var(--color-text);
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 170px;
+   height: 150px;
+   cursor: pointer;
+   box-shadow: 1px 1px 6px -3px;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   transition: transform .3s linear , border .1s;
+   -webkit-transition: transform .3s linear , border .1s;
+   -moz-transition: transform .3s linear , border .1s;
+   -ms-transition: transform .3s linear , border .1s;
+   -o-transition: transform .3s linear , border .1s;
+}
+
+.content > div:hover{
+   transform: translateY(-5px);
+   -webkit-transform: translateY(-5px);
+   -moz-transform: translateY(-5px);
+   -ms-transform: translateY(-5px);
+   -o-transform: translateY(-5px);
+
+   border: 2px solid #f44236;
+}
+
+.content div a{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content div a .icon{
+   background-color: #f44236;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+.content div a .icon i{
+   font-size: 18px;
+   color:var(--color-text);
+}
+
+.content div a .text{
+   font-size: 18px;
+   padding-top: 15px;
+   letter-spacing: 1px;
+}
+
+
+.info{
+   width: 30px;
+   height: 30px;
+   background-color: red;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   bottom: 15px;
+   right: 15px;
+   cursor: pointer;
+}
+
+.info a{
+   color: var(--color-text);
+}
